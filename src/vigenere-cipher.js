@@ -107,7 +107,7 @@ class VigenereCipheringMachine {
         crypt_arr.push(arr_massage[i]);
       }
     }
-    return crypt_arr.join('').toUpperCase() + "*" + key + "*" + massage;
+    return crypt_arr.join('').toUpperCase();
   }
 }
 
