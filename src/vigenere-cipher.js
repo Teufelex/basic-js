@@ -1,13 +1,16 @@
 const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
+  constructor(mode = true) {
+    this.mode = mode;
+  }
   encrypt(massage, key) {
     let arr_massage = massage.toLowerCase().split('');
     let arr_key = key.toLowerCase().split('');
     let result = [];
     let amp = 0;
 
-    if (!(constructor)) arr_massage.reverse();
+    if (!(this.mode)) arr_massage.reverse();
 
     for (let i = 0; arr_key.length < arr_massage.length; i++) {
       if (i >= arr_key.length) {
@@ -44,7 +47,7 @@ class VigenereCipheringMachine {
     let result = [];
     let amp = 0;
 
-    if (!(constructor)) arr_massage.reverse();
+    if (!(this.mode)) arr_massage.reverse();
 
     for (let i = 0; arr_key.length < arr_massage.length; i++) {
       if (i >= arr_key.length) {
